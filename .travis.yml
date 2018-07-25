@@ -93,10 +93,11 @@ jobs:
                 'RCTText',
                 'RCTNetwork',
                 'RCTWebSocket',
+                'RCTAnimation',
               ]
               pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
               pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
-              pod 'GLog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
+              pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
               pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
               pod 'react-native-baidumap-sdk', path: '../node_modules/react-native-baidumap-sdk/lib/ios'
             end
