@@ -3,6 +3,8 @@ aliases:
     components:
       - build-tools-26.0.3
       - android-26
+      - build-tools-23.0.1
+      - android-23
       - extra-android-m2repository
       - extra-android-support
   
@@ -22,7 +24,7 @@ aliases:
     |
       nvm install node
       yarn global add react-native-cli
-      react-native init App --version="0.56.0"
+      react-native init App --version="0.52.3"
       cd App
       yarn add react-native-baidumap-sdk
 
@@ -93,11 +95,10 @@ jobs:
                 'RCTText',
                 'RCTNetwork',
                 'RCTWebSocket',
-                'RCTAnimation',
               ]
               pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
               pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
-              pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+              pod 'GLog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
               pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
               pod 'react-native-baidumap-sdk', path: '../node_modules/react-native-baidumap-sdk/lib/ios'
             end
