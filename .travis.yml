@@ -22,7 +22,7 @@ aliases:
     |
       nvm install node
       yarn global add react-native-cli
-      react-native init App --version="0.52.3"
+      react-native init App --version="0.56.0"
       cd App
       yarn add react-native-baidumap-sdk
 
@@ -106,7 +106,7 @@ jobs:
 
 stages:
   - "test js"
-  - name: "build test for example"
-    if: branch = master
+  # - name: "build test for example"
+  #   if: branch = master
   - name: "build test for new project"
-    if: branch = release
+    # if: branch = release
