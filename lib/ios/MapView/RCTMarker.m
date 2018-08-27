@@ -127,8 +127,8 @@
 + (NSBundle *)bundle {
     static NSBundle *_bundle = nil;
     if (_bundle == nil) {
-        NSURL *bundleUrl = [[NSBundle bundleForClass:[self class]] URLForResource:@"react-native-baidumap-sdk" withExtension:@"bundle"];
-        _bundle = [NSBundle bundleWithURL:bundleUrl];
+//        NSURL *bundleUrl = [[NSBundle bundleForClass:[self class]] URLForResource:@"react-native-baidumap-sdk" withExtension:@"bundle"];
+        _bundle = [NSBundle mainBundle];
     }
     return _bundle;
 }
