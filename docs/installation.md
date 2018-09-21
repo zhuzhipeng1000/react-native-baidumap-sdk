@@ -44,6 +44,8 @@ BaiduMapAPI_Radar.framework
 
 4.添加对应的framework路径到项目中，选择General，有Build Settings 里面 有个Framework Search Paths,双击对应行的右边，弹出可以编辑内容，在新的一行中加入$(PROJECT_DIR)/../node_modules/react-native-baidumap-sdk/lib/ios  
 
+5.添加mapapi.bundle 到Copy Bundle Resources中。点击你的主工程文件，选择Build Phasees,下面有个Copy Bundle Resources，展开后，点击下面的【+】，选择在项目文件夹中的node_modules/react-native-baidumap-sdk/lib/ios/BaiduMapAPI_Map.framework/Resources/mapapi.bundle即可
+
 以上操作完毕，即可运行，看是否能成功运行，若能运行，则添加成功。
 
 其中 iOS 需要提供密钥作为参数（Android 密钥必须写在 Manifest），当然，你也可以用官方提供的方法进行初始化。
